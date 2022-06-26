@@ -1,2 +1,6 @@
-Hello Pedro Ontiveros.
-Another line has been created.
+This is a complete new comment for testing purposes only.
+This is another line printed by Pedro Ontiveros.
+And this line has been added even later.
+
+This is an extra line from the community.
+

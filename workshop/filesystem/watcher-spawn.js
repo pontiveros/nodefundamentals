@@ -7,7 +7,7 @@ if (!filename) {
     throw Error('A file to watch must be specified...');
 }
 
-//console.log('Expression: ' + process.argv[0] + ' next line\n');
+console.log('Expression: ' + process.argv[0] + ' next line\n');
 
 fs.watch(filename, () => {
     const ls = spawn('ls', ['-l', '-h', filename]);
