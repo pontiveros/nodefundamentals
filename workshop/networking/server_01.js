@@ -1,6 +1,7 @@
 'use strict';
 
 const net = require('net');
+
 const server = net.createServer(connection => {
     console.log("Subscriber connected...");
     connection.write('Hello, this is a message from the service.');
