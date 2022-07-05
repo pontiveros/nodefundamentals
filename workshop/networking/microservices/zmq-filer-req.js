@@ -1,7 +1,9 @@
 'use strict';
 
 const zmq = require('zeromq');
-const filename = process.argv[2];
+const ip = process.argv[2];
+const port = process.argv[3];
+const filename = process.argv[4];
 
 // Create request endpoint.
 const requester = zmq.socket('req');
@@ -12,7 +14,8 @@ requester.on('message', data => {
     console.log('Received response: ', response);
 });
 
-requester.connect('tcp://localhost:60401');
+// requester.connect('tcp://localhost:60401');
+requester.connect('tcp://' + ip + ':' + port);
 
 // Send a request for content.
 console.log(`Sending a request for ${filename}`);
