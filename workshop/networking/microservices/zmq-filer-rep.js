@@ -24,7 +24,7 @@ responder.on('message', data => {
 });
 
 // Listen on TCP port 60401 
-responder.bind('tcp://127.0.0.1:60401', err => {
+responder.bind('tcp://*:60401', err => {
     console.log(`Listening for zmq requesters...`);
 });
 
