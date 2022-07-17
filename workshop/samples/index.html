@@ -1,9 +1,30 @@
 <html>
 <head>
     <title>Hello World</title>
+    <style>
+        body {
+            background-color: navy;
+            color: white;
+        }
+        .group-01 {
+            background-color: purple;
+            border-style: solid;
+            border-width: 1px;
+            border-color: white;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="text-align: center; color: navy;">This is a Page for Testing Only</h1>
-    <h4 style="font-family: Courier;">To perform detection across multiple, unrelated images, create a separate image handler for each image and make requests to each handler on separate threads, so they run in parallel. Each image request handler costs additional processing time and memory, so try not to run them on the main thread. Dispatch these handlers on additional background threads, calling back to the main thread only for UI updates such as displaying images or paths.</h4>
+    <h1 style="text-align: center; color: white;">This is a Page for Testing Only</h1>
+    <div class="group-01">
+        To perform detection across multiple, unrelated images, create a separate image handler for each image and make requests to each handler on separate threads, so they run in parallel. Each image request handler costs additional processing time and memory, so try not to run them on the main thread. Dispatch these handlers on additional background threads, calling back to the main thread only for UI updates such as displaying images or paths.
+    </div>
+    <br>
+    <div class="group-01">
+
+    </div>
 </body>
 </html>
